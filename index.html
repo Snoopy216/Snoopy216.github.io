@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	
-	<style type="text/css">
-		#object{
-			transition:0.5s;
-			height:100px;
-			width:100px;
-			background-color:red;
-			border-radius:50%;
-			border:solid;
-		}
+    <style type="text/css">
+    #object {
+        transition: 0.5s;
+        height: 250px;
+        width: 250px;
+        background-color: red;
+        border-radius: 50%;
+        border: solid;
+        font-size: 30px;
+        padding: 10%;
+        color: black;
+    }
 
-		#object:hover{
-			transition:0.5s;
-			height:100px;
-			width:100px;
-			background-color:purple;
-			border:solid;
-			border-radius:5%;
-		}
-	</style>
-		
+    #object:hover {
+        transition: 0.5s;
+        height: 250px;
+        width: 250px;
+        background-color: purple;
+        border: solid;
+        border-radius: 2%;
+        color: white;
+    }
+
+    #fridge {
+        transition: 0.5s;
+        background-image: url("https://na.electroluxmedia.com/Assets/medias/images/189/EW23CS75QS-HOV_504_HERO.png");
+        background-size: contain;
+        height: 200px;
+        width: 200px;
+        background-repeat:no-repeat;
+    }
+
+    #fridge:hover {
+        background-size: cover;
+        transition: 0.5s;
+        background-image: url("https://cdn.thewirecutter.com/wp-content/uploads/2019/03/refrigerators2019-WRF535SMHZ-2x1-lowres.jpg");
+        height: 200px;
+        width: 400px;
+        background-repeat:no-repeat;
+    }
+    </style>
 </head>
-<body>
-	<a href="https://theuselessweb.com/">
-		<div id="object"></div>
-	</a>
 
+<body>
+    <a href="https://theuselessweb.com/">
+        <div id="object">
+            <p>You know you wanna click here!</p>
+        </div>
+    </a>
+    <a href="https://carrotclicker.com/m">
+        <div id="fridge"></div>
+    </a>
 </body>
+
 </html>
