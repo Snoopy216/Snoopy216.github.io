@@ -2,58 +2,81 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>The 1&Only Code Journal</title>
     <style type="text/css">
-    #object {
-        transition: 0.5s;
-        height: 250px;
-        width: 250px;
-        background-color: red;
-        border-radius: 50%;
+    #menu {
+        background-color: rgb(25, 0, 200, 1);
+        width: 20%;
+        height: 100%;
+        position: fixed;
+        right: 0%;
         border: solid;
-        font-size: 30px;
-        padding: 10%;
-        color: black;
+        border-color: black;
+        z-index: 5;
+        color: rgb(0, 252, 0);
+        font-size: 18pt;
+        font-family: monospace;
+        transition: 0.8s;
+        padding: 2%;
     }
 
-    #object:hover {
-        transition: 0.5s;
-        height: 250px;
-        width: 250px;
-        background-color: purple;
+    #menu:hover {
+        background-color: rgb(0, 252, 0);
+        width: 20%;
+        height: 100%;
+        position: fixed;
+        right: 0%;
         border: solid;
-        border-radius: 2%;
-        color: white;
+        border-color: black;
+        z-index: 5;
+        color: rgb(25, 0, 200, 1);
+        font-size: 18pt;
+        font-family: cursive;
+        transition: 0.8s;
+        padding: 2%;
     }
 
-    #fridge {
-        transition: 0.5s;
-        background-image: url("https://na.electroluxmedia.com/Assets/medias/images/189/EW23CS75QS-HOV_504_HERO.png");
-        background-size: contain;
-        height: 200px;
-        width: 200px;
-        background-repeat:no-repeat;
+    section {
+        border-right: 0px;
+        background-color: rgb(130, 0, 170, 0.3);
+        height: 800px;
+        width: 72%;
+        border: solid;
+        /*border-top: solid;
+        border-bottom: solid;
+*/
+
+        align-items: center;
+        font-size: 15pt;
+        padding: 2%;
+        font-family: 'Indie Flower', cursive;
+
     }
 
-    #fridge:hover {
-        background-size: cover;
-        transition: 0.5s;
-        background-image: url("https://cdn.thewirecutter.com/wp-content/uploads/2019/03/refrigerators2019-WRF535SMHZ-2x1-lowres.jpg");
-        height: 200px;
-        width: 400px;
-        background-repeat:no-repeat;
+    body {
+        margin: 0px;
     }
     </style>
 </head>
 
 <body>
-    <a href="https://theuselessweb.com/">
-        <div id="object">
-            <p>You know you wanna click here!</p>
-        </div>
-    </a>
-    <a href="https://carrotclicker.com/m">
-        <div id="fridge"></div>
-    </a>
+    <div id="menu">
+        <p>About Me</p>
+        <p>Best Projects!</p>
+        <p>Random Sketch :)</p>
+    </div>
+    </section>
+    <section id="one">
+        <h1><b><u>The Coding Projects of Kai</u></b></h1>
+        <p>I made some very satisfying hover effects cause I didn't know how to do very much else at the time, but it still looks cool:</p>
+        <a href="code-diddy.html">Fridge Project
+        </a>
+        <a href="./room/RoomDesign.html">
+            <p>room design</p>
+        </a>
+    </section>
+    <section id="two"></section>
 </body>
 
 </html>
