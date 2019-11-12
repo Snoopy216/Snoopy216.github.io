@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#jaguar{
+			background-color:rgb(0,0,255,0.5);
+			width:100px;
+			height:100px;
+			position:absolute;
+			top:15px;
+			left:15px;
+			transition:0.3s;
+		}
+		#jaguar:hover{
+			position:absolute;
+			background-color:rgb(0,0,255,0.2);
+			width:120px;
+			height:120px;
+			top:350px;
+			left:25px;
+			transition:0.3s;
+		}
+		#jaguarfinish{
+			position:absolute;
+			color:black;
+			background-color:white;
+			height:120px;
+			width:120px;
+			top:347px;
+			left:22px;
+			border-width:3px;
+			border:solid;
+		}
+		#text1{
+			position:absolute;
+			color:rgb(0,80,0);
+			top:160px;
+			left:20px;
+			font-size:18pt;
+		}
+		#leopard{
+			height:50px;
+			width:50px;
+			border-radius:50%;
+			top:290px;
+			left:40px;
+			background-color:rgb(220,0,0);
+			position:absolute;
+			color:pink;
+			text-align:center;
+		}
+		#leopard:hover{
+			height:50px;
+			width:50px;
+			border-radius:50%;
+			top:290px;
+			left:40px;
+			background-color:rgb(230,230,0);
+			position:absolute;
+			color:black;
+			text-align:center;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div id='text1'><p>Bring that square</p><p> to the box!</p></div>
+	
+	<div id='jaguarfinish'></div>
+	<div id='jaguar'></div>
+	<div id='leopard'>Click Me!</div>
+	<script type="text/javascript">
+
+		var leoClick = false;
+
+
+		var leopard = document.getElementById("leopard");
+
+		function makeLion () {
+			var lion = document.createElement("div");
+			document.body.appendChild(lion);
+			lion.style.backgroundColor="rgb(0,252,0)";
+			lion.style.height="200px";
+			lion.style.width="100px";
+			lion
+		}
+		
+		leopard.addEventListener('click',
+			function leoBool(){
+				if(leoClick==true){
+					leoClick=false;
+					console.log(leoClick);
+				}else{
+					leoClick=true;
+					console.log(leoClick);
+				};
+			}
+		);
+
+		makeLion();
+
+			
+
+	</script>
+</body>
+</html>

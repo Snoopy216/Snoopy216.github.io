@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#scratch{
+			background-image:url("scratchCode.png");
+			background-size:cover;
+			background-repeat:no-repeat;
+			height:400px;
+			width:332px;
+			top:0%;
+			left:0%;
+		}
+
+		#script{
+			background-image:url("javascriptCode.png");
+			background-size:cover;
+			background-repeat:no-repeat;
+			height:400px;
+			width:350px;
+
+		}
+
+		.code{
+			display:inline-block;
+		}
+
+		#text{
+		}
+	</style>
+</head>
+<body>
+	<div id='scratch' class='code'></div>
+	<div id='script' class='code'></div>
+	<div id='text'><p>This code was made by Kai and Ryan as a solution to the Fizz Buzz challenge. We solved it first in Scratch and then in javascript. Below are explanations as to how they work:</p>
+	<b>Scratch Code</b>
+	<p>The code begins by setting a counter variable i to 1. Then, we repeat the following loop 100 times (because length is set to 100). In both Scratch and Javascript, the mod function is used. Because the mod function finds the remainder, than one number is divisible by another if the mod function gives a result of 0. If i (the number we're checking) is a multiple of 15, then print FizzBuzz. If it is not, and also is not a multiple of 3 or 5, print the number i. If neither of these conditions, are true, then check if the number is a multiple of 3 or 5. If it is a multiple of 3, print Fizz, and if it is a multiple of 5, print Buzz. Then, increase i by 1 and restart the loop. Variable i will start at 1 and end at 100. </p>
+	<b>Javascript</b>
+	<p>The Javascript results are in the console. The Javascript runs similarly to the Scratch code, although not identically. In the beginning, we define n to be 1 and length to be 100. This for loop will repeat 100 times, with n starting at 1 and ending at 100. For each number n, the code runs through this sequence: If n is a multiple of 15, print FizzBuzz. If it is not a multiple of 15, but is a multiple of 5, print Buzz. If it is not a multiple of 5 or 15 but is a multiple of 3, print Fizz. Finally, if n is not divisible by 3,5, or 15, print the number n itself.</p></div>
+
+	<script type="text/javascript">
+		var n=1;
+		var length=100;
+
+		function FizzBuzz(){
+			for (n=1; n<length+1; n++){
+				if (n%15 == 0){
+					console.log("FizzBuzz");
+				}else if (n%5 == 0){
+					console.log("Buzz");
+				}else if (n%3 == 0){
+					console.log("Fizz");
+				}else{
+					console.log(n);
+				}
+			}
+		}
+
+		FizzBuzz();
+		
+	</script>
+</body>
+</html>
