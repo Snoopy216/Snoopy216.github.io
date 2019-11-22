@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Albatrosses</title>
+	<style type="text/css">
+		#albatross{
+			background-image:url("albatross.png");
+			background-size:contain;
+			height:200px;
+			width:300px;
+			border-radius:10%;
+			position:relative;
+		}
+	</style>
+</head>
+<body>
+	<div id='albatross'></div>
+
+	<script type="text/javascript">
+		var albatross = document.getElementById('albatross');
+
+		function makeAlbatross(){
+			var alba = document.createElement("div");
+			alba.style.height = "50px";
+			alba.style.width = "75px";
+			alba.style.backgroundImage = "url(albatross.png)";
+			alba.style.backgroundSize = "contain";
+			alba.style.borderRadius = "10%";
+			alba.style.position = "relative";
+			alba.style.display = "inline-block";
+			document.body.appendChild(alba);
+
+
+		};
+
+albatross.addEventListener("click", 
+			makeAlbatross);
+
+	</script>
+</body>
+</html>

@@ -11,9 +11,96 @@
 		}
 
 		#anemone{
-			background-image:url("anemonePhoto.png");
-			height:300px;
+			background-image:url("anemone.png");
+			height:170px;
+			width:200px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			top:40%;
+			left:5%;
+			transition:0.2s;
+		}
+
+		#anemone:hover{
+			background-image:url("anemone.png");
+			height:230px;
+			width:260px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			top:35%;
+			left:5%;
+			transition:0.2s;
+		}
+
+		#turtle{
+			background-image:url("turtle.png");
+			height:180px;
 			width:300px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			top:10%;
+			left:55%;
+			transition:0.3s;
+		}
+
+		#turtle:hover{
+			background-image:url("turtle.png");
+			height:240px;
+			width:200px;
+			background-size:contain;
+			background-repeat:repeat;
+			position:absolute;
+			top:10%;
+			left:55%;
+			transition:0.3s;
+		}
+
+		#swordfish{
+			background-image:url("swordfish.png");
+			height:200px;
+			width:300px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			top:65%;
+			left:45%;
+			transition:0.3s;
+		}
+
+		#swordfish:hover{
+			background-image:url("swordfish.png");
+			height:200px;
+			width:300px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			top:65%;
+			left:25%;
+			transition:0.3s;
+		}
+
+		#bubble1{
+			top:15%;
+			left:3%;
+		}
+
+		#bubble2{
+			top:3%;
+			left:30%;
+		}
+
+		#bubble3{
+
+		}
+
+		.bubble{
+			background-image:url("bubble.png");
+			height:120px;
+			width:100px;
+			position:absolute;
 			background-size:contain;
 			background-repeat:no-repeat;
 		}
@@ -21,11 +108,14 @@
 
 </head>
 <body>
-	<div id= "anemone">
-	</div>
+	<div id= "anemone"></div>
+	<div id='turtle'></div>
+	<div id='swordfish'></div>
 
 	<script type="text/javascript">
-		
+		var anemone = document.getElementById('anemone');
+		var turtle = document.getElementById('turtle');
+		var swordfish = document.getElementById('swordfish');
 	</script>
 </body>
 </html>
