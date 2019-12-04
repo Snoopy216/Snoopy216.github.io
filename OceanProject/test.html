@@ -20,6 +20,7 @@
 			top:40%;
 			left:5%;
 			transition:0.2s;
+			opacity:1;
 		}
 
 		#anemone:hover{
@@ -42,7 +43,7 @@
 			background-size:contain;
 			background-repeat:no-repeat;
 			position:absolute;
-			top:15%;
+			top:10%;
 			left:55%;
 			transition:0.3s;
 			opacity:1;
@@ -55,7 +56,7 @@
 			background-size:contain;
 			background-repeat:repeat;
 			position:absolute;
-			top:15%;
+			top:10%;
 			left:55%;
 			transition:0.3s;
 			opacity:1;
@@ -71,6 +72,7 @@
 			top:65%;
 			left:45%;
 			transition:0.3s;
+			opacity:1;
 		}
 
 		#swordfish:hover{
@@ -83,42 +85,21 @@
 			top:65%;
 			left:25%;
 			transition:0.3s;
-		}
-
-		#polarBear{
-			background-image:url("polarBear.png");
-			height:200px;
-			width:250px;
-			background-size:contain;
-			background-repeat:no-repeat;
-			position:absolute;
-			top:80%;
-			left:50%;
-			opacity:0;
-		}
-
-		#ocean{
-			left:40%;
-			position:absolute;
-			color:black;
-			height:70px;
-			width:200px;
-			font-size:20pt;
+			opacity:1;
 		}
 
 		#bubble1{
-			top:73%;
-			left:30%;
-			opacity:0;
+			top:15%;
+			left:3%;
 		}
 
 		#bubble2{
-			top:15%;
-			left:15%;
+			top:3%;
+			left:30%;
 		}
 
 		#bubble3{
-			opacity:0;
+
 		}
 
 		.bubble{
@@ -136,50 +117,23 @@
 	<div id= "anemone"></div>
 	<div id='turtle'></div>
 	<div id='swordfish'></div>
-	<div id='ocean'>Indian Ocean</div>
-	<div id='polarBear'></div>
 	<div id='bubble1' class='bubble'></div>
-	<div id='bubble2' class='bubble'></div>
-	<div id='bubble3' class='bubble'></div>
+	<!-- <div id='bubble2' class='bubble'></div>
+	<div id='bubble3' class='bubble'></div> -->
 
 	<script type="text/javascript">
 		var stage = 1;
 		var anemone = document.getElementById('anemone');
 		var turtle = document.getElementById('turtle');
 		var swordfish = document.getElementById('swordfish');
-		var polarBear = document.getElementById('polarBear');
-		var ocean = document.getElementById('ocean');
 		var bubble1 = document.getElementById('bubble1');
-		var bubble2 = document.getElementById('bubble2');
-		var bubble3 = document.getElementById('bubble3');
+		
 
-		function changeAppearance(){
-			if(stage==1){
-				ocean.innerText = "Indian Ocean";
-				anemone.style.opacity = "1";
-				turtle.style.opacity = "1";
-				swordfish.style.opacity = "1";
-				polarBear.style.opacity = "0";
-				bubble1.style.opacity = "0";
-				bubble2.style.opacity = "1";
-			}else if(stage==2){
-				ocean.innerText = "Arctic Ocean"
-				anemone.style.opacity = "0";
-				turtle.style.opacity = "0";
-				swordfish.style.opacity = "0";
-				polarBear.style.opacity = "1";
-				bubble1.style.opacity = "1";
-				bubble2.style.opacity = "0";
-			}
-		}
 		bubble1.addEventListener("click", function(){
-			stage = 1;
-			changeAppearance();
-		});
-
-		bubble2.addEventListener("click", function(){
 			stage = 2;
-			changeAppearance();
+			anemone.style.opacity = "0";
+			turtle.style.opacity = "0";
+			swordfish.style.opacity = "0";
 		});
 	</script>
 </body>

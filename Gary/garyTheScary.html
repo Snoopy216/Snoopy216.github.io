@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+	<script src="garyTheScary.js"></script> -->
+    <title>Gary the Scary <(0,0)>
+    </title>
+    <style type="text/css">
+    	#gary{
+    		background-image:url('garyTheScary.png');
+    		background-size:contain;
+    		height:60px;
+    		width:50px;
+    		top:0px;
+    		left:0px;
+    		position:absolute;
+    	}
+    </style>
+</head>
+
+<body>
+	<div id='gary'></div>
+    <script type="text/javascript">
+    var gary = document.getElementById('gary');
+    var gx = 0;
+    var gy = 0;
+    var level = 0;
+
+    // document.addEventListener('keydown', checkKey);
+
+    // function checkKey(e) {
+
+    //     // e = e || window.event;
+
+    //     if (e.keyCode == '38') {
+    //         console.log("Up Arrow");
+    //         gy -= 5;
+    //     } else if (e.keyCode == '40') {
+    //         console.log("Down Arrow");
+    //         gy += 5;
+    //     } else if (e.keyCode == '37') {
+    //         // left arrow
+    //     } else if (e.keyCode == '39') {
+    //         // right arrow
+    //     }
+    //     gary.style.top = gy +"px";
+
+    // };
+
+    var gmovex = 0;
+    var gmovey = 0;
+
+    document.addEventListener('keydown', checkKey);
+    document.addEventListener('keyup', releaseKey);
+
+
+    function checkKey(e) {
+
+        // e = e || window.event;
+
+        if (e.keyCode == '38') {
+            console.log("Up Arrow");
+            gmovey = -50;
+        } else if (e.keyCode == '40') {
+            console.log("Down Arrow");
+            gmovey = 50;
+        } else if (e.keyCode == '37') {
+            // left arrow
+        } else if (e.keyCode == '39') {
+            // right arrow
+        }
+    };
+
+    function releaseKey(f) {
+    	if (f.keyCode == '38') {
+            console.log("Up Arrow R");
+            gmovey = 0;
+        } else if (f.keyCode == '40') {
+            console.log("Down Arrow R");
+            gmovey = 0;
+        } else if (f.keyCode == '37') {
+            // left arrow
+        } else if (f.keyCode == '39') {
+            // right arrow
+        }
+    }
+
+    while(level != 5){
+    	window.setTimeout(garyMove(), 500);
+    	level++;
+    	console.log("while");
+    }
+
+    function garyMove(){
+    	gx = gx + gmovex;
+    	gy = gy + gmovey;
+    	gary.style.top = gy +"px";
+    	gary.style.left = gx + "px"
+    }
+    </script>
+</body>
+
+</html>

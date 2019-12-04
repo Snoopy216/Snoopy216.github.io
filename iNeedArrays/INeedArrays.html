@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I Need Arrays</title>
+	<style type="text/css">
+		#money{
+			background-image:url('cashMoaney.png');
+			background-repeat:no-repeat;
+			background-size:contain;
+			text-align:center;
+			text-overflow:center;
+			height:500px;
+			width:500px;
+			font-size:25px;
+			position:absolute;
+			padding:220px 0;
+			padding-left:120px;
+		}`
+	</style>
+</head>
+<body>
+	Click the money to get money!
+	<div id='money'></div>
+	<script type="text/javascript">
+		var array = ["Money", "Moaney", "Cash", "Dough", "Bucks", "Moolah", "Change"];
+
+		var money = document.getElementById("money");
+		money.addEventListener("click", 
+			function(){
+				money.innerText = array[Math.floor(Math.random()*7)];
+			});
+	</script>
+</body>
+</html>
