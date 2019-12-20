@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Girassol|Montserrat&display=swap" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+		#worldMap{
+			background-image:url("worldMap.png");
+			height:50vw;
+			width:100vw;
+			background-repeat:no-repeat;
+			background-size:contain;
+			position:absolute;
+		}
+
+		#pacific{
+			top:8vw;
+			left:1vw;
+			height:35vw;
+			width:30vw;
+		}
+
+		#pacific2{
+			top:8vw;
+			left:83vw;
+			height:35vw;
+			width:17vw;
+			background-color:lightgreen;
+		}
+
+		#atlantic{
+			top:8vw;
+			left:31vw;
+			height:35vw;
+			width:24vw;
+			background-color:lightgreen;
+		}
+
+		#indian{
+			top:18vw;
+			left:55vw;
+			height:25vw;
+			width:28vw;
+		}
+
+		#arctic{
+			top:1vw;
+			left:10vw;
+			height:7vw;
+			width:82vw;
+			background-color:red;
+		}
+
+		#southern{
+			top:43vw;
+			left:10vw;
+			height:9vw;
+			width:82vw;
+			background-color:red;
+		}
+
+		#worldMapText{
+			font-size:30pt;
+			position:absolute;
+			top:52vw;
+			height:16vw;
+			width:95vw;
+			font-family: 'Girassol', cursive;
+			color:rgb(0,30,150);
+			background-color:yellow;
+			padding:2vw;
+		}
+
+		.ocean{
+			position:absolute;
+			background-color:yellow;
+			opacity:0;
+		}
+	</style>
+</head>
+<body>
+<div id='worldMap'></div>
+<div id='worldMapText'>Click on an ocean to see what plants and animals live there!</div>
+<div id='pacific' class='ocean'></div>
+<div id='pacific2' class='ocean'></div>
+<div id='atlantic' class='ocean'></div>
+<a href="indianOcean.html">
+	<div id='indian' class='ocean'></div>
+</a>
+<a href="arcticOcean.html">
+	<div id='arctic' class='ocean'></div>
+</a>
+<div id='southern' class='ocean'></div>
+
+<script type="text/javascript">
+	var indianOcean = document.getElementById('indianOcean')
+
+</script>
+</body>
+</html>

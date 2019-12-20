@@ -1,0 +1,135 @@
+		body{
+			background-image:url("oceanBackg.png");
+			background-size:cover;
+			background-repeat:no-repeat;
+			height:650px;
+			width:100%;
+		}
+
+		.creature{
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+
+		}
+
+		#anemone{
+			background-image:url("anemone.png");
+			height:170px;
+			width:200px;
+			top:40%;
+			left:5%;
+			transition:0.2s;
+		}
+
+		#anemone:hover{
+			background-image:url("anemone.png");
+			height:230px;
+			width:260px;
+			top:35%;
+			left:5%;
+			transition:0.2s;
+			opacity:1;
+		}
+
+		#turtle{
+			background-image:url("turtle.png");
+			height:180px;
+			width:300px;
+			top:15%;
+			left:55%;
+			transition:0.3s;
+			opacity:1;
+		}
+
+		#turtle:hover{
+			background-image:url("turtle.png");
+			background-repeat:repeat;
+			height:240px;
+			width:200px;
+			top:15%;
+			left:55%;
+			transition:0.3s;
+			opacity:1;
+		}
+
+		#swordfish{
+			background-image:url("swordfish.png");
+			height:200px;
+			width:300px;
+			top:65%;
+			left:45%;
+			transition:0.3s;
+		}
+
+		#swordfish:hover{
+			background-image:url("swordfish.png");
+			height:200px;
+			width:300px;
+			top:65%;
+			left:25%;
+			transition:0.3s;
+		}
+
+		#polarBear{
+			background-image:url("polarBear.png");
+			height:200px;
+			width:250px;
+			top:10%;
+			left:60%;
+		}
+
+		#ocean{
+			left:40%;
+			top:2%;
+			position:absolute;
+			color:black;
+			height:70px;
+			width:200px;
+			font-size:20pt;
+		}
+
+		#bubble1{
+			top:73%;
+			left:30%;
+		}
+
+		#bubble2{
+			top:15%;
+			left:15%;
+		}
+
+		#bubble3{
+		}
+
+		.bubble{
+			background-image:url("bubbles.png");
+			height:120px;
+			width:100px;
+			position:absolute;
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+
+		#back{
+			background-color:black;
+			color:white;
+			position:absolute;
+			top:60%;
+			left:2%;
+			height:100px;
+			width:400px;
+			opacity:0;
+			font-size:50pt;
+		}
+
+		#returnToWorld{
+			background-image:url("worldMap.png");
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			height:10vw;
+			width:20vw;
+			top:87vw;
+			left:3vw;
+		}

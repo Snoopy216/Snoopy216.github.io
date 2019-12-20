@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="oceanstyle.css">
+</head>
+<body>
+	<div class="creature"id= "anemone"></div>
+	<div class="creature" id='turtle'></div>
+	<div class="creature" id='swordfish'></div>
+	<div class="creature" id='ocean'>Indian Ocean</div>
+	<div class="creature" id='bubble1' class='bubble'></div>
+	<div class="creature"  id='bubble2' class='bubble'></div>
+	<div class="creature" id='bubble3' class='bubble'></div>
+	<div class="creature" id='back'>Back to Ocean</div>
+	<a href="homePage.html">
+		<div id='returnToWorld'></div>
+	</a>
+	<script type="text/javascript">
+		var stage = 1;
+		var anemone = document.getElementById('anemone');
+		var turtle = document.getElementById('turtle');
+		var swordfish = document.getElementById('swordfish');
+		var polarBear = document.getElementById('polarBear');
+		var ocean = document.getElementById('ocean');
+		var bubble1 = document.getElementById('bubble1');
+		var bubble2 = document.getElementById('bubble2');
+		var bubble3 = document.getElementById('bubble3');
+		var back = document.getElementById('back');
+		var returnToWorld = document.getElementById('returnToWorld')
+
+		function hideAll(){
+			anemone.style.opacity = "0";
+			turtle.style.opacity = "0";
+			swordfish.style.opacity = "0";
+			polarBear.style.opacity = "0";
+			bubble1.style.opacity = "0";
+			bubble2.style.opacity = "0";
+		}
+
+		turtle.addEventListener("click", function(){
+			ocean.innerText = "The turtle is a marine animal living in most oceans in the world. It has a tough shell to protect itself from predators.";
+			ocean.style.left = "3%";
+			ocean.style.width = "50%";
+			turtle.style.top = "2%";
+			back.style.opacity = "1";
+			returnToWorld.style.opacity= "0";
+			swordfish.style.opacity ="0";
+			anemone.style.opacity = "0";
+			turtle.style.opacity = "1";
+			document.body.style.backgroundImage = "url(white.png)"
+		});
+
+		back.addEventListener("click", function(){
+			ocean.innerText = "Indian Ocean";
+			ocean.style.left = "40%";
+			back.style.opacity = "0";
+			anemone.style.opacity = "1";
+			swordfish.style.opacity = "1";
+			turtle.style.top = "15%";
+			turtle.style.left = "55%";
+			returnToWorld.style.opacity= "1";
+			document.body.style.backgroundImage = "url(oceanBackG.png)"
+		})
+	</script>
+</body>
+</html>

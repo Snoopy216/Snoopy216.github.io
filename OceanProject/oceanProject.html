@@ -6,7 +6,7 @@
 			background-image:url("oceanBackg.png");
 			background-size:cover;
 			background-repeat:no-repeat;
-			height:700px;
+			height:650px;
 			width:100%;
 		}
 
@@ -44,8 +44,8 @@
 			position:absolute;
 			top:15%;
 			left:55%;
-			transition:0.3s;
-			opacity:1;
+			transition:0.1s;
+			opacity:1
 		}
 
 		#turtle:hover{
@@ -57,7 +57,7 @@
 			position:absolute;
 			top:15%;
 			left:55%;
-			transition:0.3s;
+			transition:0.1s;
 			opacity:1;
 		}
 
@@ -92,8 +92,8 @@
 			background-size:contain;
 			background-repeat:no-repeat;
 			position:absolute;
-			top:80%;
-			left:50%;
+			top:10%;
+			left:60%;
 			opacity:0;
 		}
 
@@ -129,6 +129,14 @@
 			background-size:contain;
 			background-repeat:no-repeat;
 		}
+
+		/*#turtleD{
+			background-color:white;
+			height:650px;
+			width:800px;
+			opacity:0;
+			z-index:0;
+		}*/
 	</style>
 
 </head>
@@ -138,6 +146,7 @@
 	<div id='swordfish'></div>
 	<div id='ocean'>Indian Ocean</div>
 	<div id='polarBear'></div>
+	<div id=turtleD></div>
 	<div id='bubble1' class='bubble'></div>
 	<div id='bubble2' class='bubble'></div>
 	<div id='bubble3' class='bubble'></div>
@@ -149,6 +158,7 @@
 		var swordfish = document.getElementById('swordfish');
 		var polarBear = document.getElementById('polarBear');
 		var ocean = document.getElementById('ocean');
+		var turtleD = document.getElementById('turtleD');
 		var bubble1 = document.getElementById('bubble1');
 		var bubble2 = document.getElementById('bubble2');
 		var bubble3 = document.getElementById('bubble3');
@@ -180,6 +190,10 @@
 		bubble2.addEventListener("click", function(){
 			stage = 2;
 			changeAppearance();
+		});
+
+		turtle.addEventListener("click", function(){
+			turtleD.style.opacity = "1";
 		});
 	</script>
 </body>
