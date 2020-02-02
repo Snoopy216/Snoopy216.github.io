@@ -47,6 +47,37 @@
 			swordfish.style.opacity ="0";
 			anemone.style.opacity = "0";
 			turtle.style.opacity = "1";
+			swordfish.style.opacity = "0";
+			document.body.style.backgroundImage = "url(white.png)"
+		});
+
+		anemone.addEventListener("click", function(){
+			ocean.innerText = "Anemones are aquatic plants who live on rocks. Many fish use anemones as homes because they provide shelter. Anemones are all over the world!";
+			ocean.style.left = "3%";
+			ocean.style.width = "50%";
+			anemone.style.top = "2%";
+			anemone.style.left = "55%";
+			back.style.opacity = "1";
+			returnToWorld.style.opacity= "0";
+			swordfish.style.opacity ="0";
+			turtle.style.opacity = "0";
+			anemone.style.opacity = "1";
+			swordfish.style.opacity = "0";
+			document.body.style.backgroundImage = "url(white.png)"
+		});
+
+		swordfish.addEventListener("click", function(){
+			ocean.innerText = "Swordfish are named for their long, sword-like nose. They can we up to 7 feet long!";
+			ocean.style.left = "3%";
+			ocean.style.width = "50%";
+			swordfish.style.top = "2%";
+			swordfish.style.left = "50%";
+			back.style.opacity = "1";
+			returnToWorld.style.opacity= "0";
+			swordfish.style.opacity ="0";
+			turtle.style.opacity = "0";
+			anemone.style.opacity = "0";
+			swordfish.style.opacity = "1";
 			document.body.style.backgroundImage = "url(white.png)"
 		});
 
@@ -56,8 +87,13 @@
 			back.style.opacity = "0";
 			anemone.style.opacity = "1";
 			swordfish.style.opacity = "1";
+			turtle.style.opacity = "1";
 			turtle.style.top = "15%";
 			turtle.style.left = "55%";
+			anemone.style.top = "40%";
+			anemone.style.left = "5%";
+			swordfish.style.top = "65%";
+			swordfish.style.left = "45%";
 			returnToWorld.style.opacity= "1";
 			document.body.style.backgroundImage = "url(oceanBackG.png)"
 		})

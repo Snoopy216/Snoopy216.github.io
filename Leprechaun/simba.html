@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Setps</title>
+	<style type="text/css">
+		.simba{
+			background-image:url("simba.png");
+			height:50px;
+			width:50px;
+			background-size:contain;
+			background-repeat: no-repeat;
+			position:absolute;
+			transition: all 1s;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function makeSimba(){
+			var simba = document.
+				createElement("div");
+			document.body.appendChild(simba)
+				;
+			simba.classList.add("simba")
+				;
+			simba.style.left = Math.random()*1200+"px";
+			simba.style.top = Math.random()*620+"px";
+			size = Math.random()*60+20;
+			simba.style.height = size+"px";
+			simba.style.width = size+"px";
+
+			function simbaMove(){
+			simba.style.left = Math.random()*1200+"px";
+			simba.style.top = Math.random()*620+"px";
+			size = Math.random()*60+20;
+			simba.style.height = size+"px";
+			simba.style.width = size+"px";
+		}
+
+		setInterval(simbaMove, 1000);
+
+		};
+ 
+		for (var i=0; i<500; i++){
+			makeSimba();
+		}
+
+		
+	</script>
+</body>
+</html>

@@ -74,7 +74,7 @@
 	<div id='leopard'>Click Me!</div>
 	<script type="text/javascript">
 
-		var leoClick = false;
+		var leopardPos = 0
 
 
 		var leopard = document.getElementById("leopard");
@@ -85,18 +85,15 @@
 			lion.style.backgroundColor="rgb(0,252,0)";
 			lion.style.height="200px";
 			lion.style.width="100px";
-			lion
+			lion.style.borderRadius="20%";
 		}
 		
 		leopard.addEventListener('click',
-			function leoBool(){
-				if(leoClick==true){
-					leoClick=false;
-					console.log(leoClick);
-				}else{
-					leoClick=true;
-					console.log(leoClick);
-				};
+			function(){
+				leopardPos++;
+				if (leopardPos==2){
+					leopard.style.top = 
+				}
 			}
 		);
 
