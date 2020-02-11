@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LE PEN!</title>
+	<style type="text/css">
+		.lepen{
+			background-image:url("lepen.png");
+			height:150px;
+			width:150px;
+			position:absolute;
+			background-size:contain;
+			background-repeat: no-repeat;
+			transition:all 1s
+		}
+		#white{
+			background-color:pink;
+			height:700px;
+			width:1300px;
+			position:absolute;
+			z-index:1;
+			opacity:0; 
+		}
+		*
+		{
+			margin:0;
+			padding:0;
+		}
+
+		#text{
+			height:100px;
+			width:1200px;
+			font-size:45pt;
+			text-align:center;
+			position:absolute;
+			z-index:2;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="text">Click when your eyes hurt too much :)</div>
+	<div id="white"></div>
+<script type="text/javascript">
+		function makeLepen(){
+			var lepen = document.
+				createElement("div");
+			document.body.appendChild(lepen)
+				;
+			lepen.classList.add("lepen")
+				;
+			lepen.style.left = Math.random()*1160+"px";
+			lepen.style.top = Math.random()*450+100+"px";
+			size = Math.random()*80+60;
+			lepen.style.height = size+"px";
+			lepen.style.width = size+"px";
+
+			function lepenMove(){
+			lepen.style.left = Math.random()*1160+"px";
+			lepen.style.top = Math.random()*450+100+"px";
+			size = Math.random()*80+60;
+			lepen.style.height = size+"px";
+			lepen.style.width = size+"px";
+		}
+
+		setInterval(lepenMove, 800);
+	};
+		
+
+		var white = document.getElementById("white");
+
+		// function growLepen(){
+		// 	var lepen = document.createElement("div");
+		// 	document.body.appendChild(lepen);
+		// }
+
+		var design = Math.floor(Math.random()*3);
+		console.log(design);
+
+		for (var i=0; i<300; i++){
+			makeLepen();
+		}
+
+		document.body.addEventListener("click", function(){
+			white.style.opacity = "1";
+			text.style.fontSize = "80pt";
+			text.innerText = "Happy Valentine's Day!"
+		})
+
+		
+</script>
+</body>
+</html>
