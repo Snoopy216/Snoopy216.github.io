@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var pterodactyl = {
+        name: "pterodactyl",
+        type: "pterodactyl",
+        speed: 70,
+        width: "200px",
+        height: "200px", 
+        left: 0,
+        drive: function (){
+        	console.log("I'm driving!")
+        }
+
+
+    };
+
+
+
+    var albatross = {
+        name: "albatross",
+        type: "albatross",
+        speed: 35,
+        width: "200px",
+        height: "200px", 
+        left: 0
+
+
+    };
+
+
+
+    var eagle = {
+        name: "eagle",
+        type: "eagle",
+        speed: 50,
+        width: "200px",
+        height: "200px", 
+        left: 0
+
+
+    };
+
+    var pidgeon = {
+        name: "pidgeon",
+        type: "pidgeon",
+        speed: 50,
+        width: "200px",
+        height: "200px", 
+        left: 0
+
+
+    };
+
+    function makeCar(x) {
+        var d = document.createElement("div");
+        document.body.appendChild(d);
+        d.style.position = "relative";
+        d.style.left = x.left;
+        d.style.backgroundSize = "contain";
+        d.style.backgroundRepeat="no-repeat";
+
+        d.id = x.name;
+        d.style.backgroundImage = "url(" + x.type + ".png)";
+        d.style.width = x.width;
+        d.style.transition="1s";
+        d.style.height = x.height;
+        
+        var left = 0;
+
+        function go() {
+        	left = left + x.speed;
+            d.style.left = left + "px";
+        	console.log(left);
+        }
+
+
+        d.addEventListener(
+            "click",
+            function() {
+                setInterval(go, 100);
+            });
+
+
+
+    }; //end of function makeCar;
+
+    makeCar(pterodactyl);
+    makeCar(albatross);
+    makeCar(eagle);
+
+
+    </script>
+</body>
+
+</html>
