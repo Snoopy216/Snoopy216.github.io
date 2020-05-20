@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday Mom!</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			background-color: black;
+		}
+		#btext{
+			top:13vh;
+			height:15vh;
+			left:20vw;
+			width:60vw;
+			color:red;
+			background-color:rgb(60,60,60);
+			position:absolute;
+			font-size: 60pt;
+			text-align: center;
+			transition: 0.5s;
+		}
+		#cake{
+			top:30vh;
+			height:56vh;
+			left:35vw;
+			width:30vw;
+			background-image:url("cake.png");
+			position:absolute;
+			background-repeat: no-repeat;
+			background-size: contain;
+			transition: 0.5s;
+		}
+		#balloon{
+			top:68vh;
+			height:30vh;
+			left:5vw;
+			width:10vw;
+			background-image:url("balloon.png");
+			position: absolute;
+			background-repeat: no-repeat;
+			background-size: contain;
+			transition: 1s;
+		}
+		#balloon2{
+			top:68vh;
+			height:30vh;
+			left:85vw;
+			width:10vw;
+			background-image:url("balloon.png");
+			position: absolute;
+			background-repeat: no-repeat;
+			background-size: contain;
+			transition: 1s;
+		}
+		#firework{
+			background-image:url("firework.png");
+			top:2vh;
+			height:9vh;
+			left:20vw;
+			width:10vw;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+		}
+		#firework2{
+			background-image:url("firework.png");
+			top:2vh;
+			height:9vh;
+			left:38vw;
+			width:10vw;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+		}
+		#firework3{
+			background-image:url("firework.png");
+			top:2vh;
+			height:9vh;
+			left:56vw;
+			width:10vw;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+		}
+		#firework4{
+			background-image:url("firework.png");
+			top:2vh;
+			height:9vh;
+			left:74vw;
+			width:10vw;
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+		}
+		#note{
+			top:100vh;
+			height:96vh;
+			left:0vw;
+			width:96vw;
+			background-color:rgb(255,255,255);
+			opacity:1;
+			position:absolute;
+			padding:2vw;
+			font-size: 26pt;
+			font-family:'Roboto', sans-serif;
+		}
+		#notetext{
+			top:110vh;
+			height:84vh;
+			left:0vw;
+			width:96vw;
+			background-color:rgb(255,255,255);
+			opacity:1;
+			position:absolute;
+			padding: 2vw;
+			font-size: 26pt;
+			font-family:'Roboto', sans-serif;
+		}
+		#sincerely{
+			top:160vh;
+			height:34vh;
+			left:0vw;
+			width:96vw;
+			background-color:rgb(255,255,255);
+			opacity:1;
+			position:absolute;
+			padding: 2vw;
+			font-size: 26pt;
+			font-family:'Roboto', sans-serif;
+		}
+	</style>
+</head>
+<body>
+<div id='btext'>Happy Birthday Mom!</div>
+<div id='cake'></div>
+<div id='balloon'></div>
+<div id='balloon2'></div>
+<div id='firework'></div>
+<div id='firework2'></div>
+<div id='firework3'></div>
+<div id='firework4'></div>
+<div id='note'>
+	Dear Mom,
+</div>
+<div id='notetext'>
+	Have a very happy birthday! You deserve it, especially in such a crazy time. You've done so much for our family by taking care of everything and everyone during Dad's quarantine, and I can't thank you enough :D. From Manifest to your new Maroon 5 obsession and being a great audience for my mediocre jokes, you're so fun to be around and I love spending time with you! Once again, have a great 30th birthday (It's around there sorry I'm crap at math) and I can't wait to spend another fantastic year with you!
+</div>
+<div id='sincerely'>
+	Lots o' Love, Your favorite child by far.   (JKJK I can sense Tien's anger)
+</div>
+
+<script type="text/javascript">
+
+var btext = document.getElementById('btext');
+var cake = document.getElementById('cake');
+var balloon = document.getElementById('balloon');
+var balloon2 = document.getElementById('balloon2');
+var colors = [255,0,0,255,140,0,240,240,0,0,255,0];
+var cc = 0;
+setInterval(function animate(){
+	if(cc == 0){
+		btext.style.color = "rgb("+colors[0]+","+colors[1]+","+colors[2]+")";
+		cake.style.left = "35vw";
+		cake.style.width = "30vw";
+	}else if(cc == 1){
+		balloon.style.top = "68vh";
+		balloon.style.transition = "0s";
+		balloon2.style.top = "68vh";
+		balloon2.style.transition = "0s";
+	}else if(cc == 2){
+		btext.style.color = "rgb("+colors[3]+","+colors[4]+","+colors[5]+")";
+		cake.style.left = "36.5vw";
+		cake.style.width = "27vw";
+		balloon.style.top = "47vh";
+		balloon.style.transition = "1s";
+		balloon2.style.top = "47vh";
+		balloon2.style.transition = "1s";
+	}else if(cc == 4){
+		btext.style.color = "rgb("+colors[6]+","+colors[7]+","+colors[8]+")";
+		cake.style.left = "35vw";
+		cake.style.width = "30vw";
+		balloon.style.top = "26vh";
+		balloon2.style.top = "26vh";
+	}else if(cc == 6){
+		btext.style.color = "rgb("+colors[9]+","+colors[10]+","+colors[11]+")";
+		cake.style.left = "36.5vw";
+		cake.style.width = "27vw";
+		balloon.style.top = "5vh";
+		balloon2.style.top = "5vh";
+	}
+	cc++;
+	if(cc == 8){
+		cc = 0;
+	}
+},250)
+
+</script>
+
+</body>
+</html>
