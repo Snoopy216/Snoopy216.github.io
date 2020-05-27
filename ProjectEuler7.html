@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Euler 7</title>
+	<style type="text/css">
+		#ans{
+			height:80vh;
+			width:80vw;
+			color:cyan;
+			font-size:160pt; 
+		}
+		body{
+			background-color:black;
+		}
+	</style>
+</head>
+<body>
+	<div id='ans'>104743</div>
+	<script type="text/javascript">
+		function primeFinder(){
+			var primes = [2];
+			var x = false;
+			for(i=3; primes.length<10001; i++){
+				x = true;
+				for(j=0; j<primes.length; j++){
+					if(i%primes[j]==0){
+						j = primes.length;
+						x = false;
+					}
+				}
+				if(x == true){
+					primes.push(i);
+				}
+			}
+			console.log(primes[10000]);
+			console.log(primes);
+		}
+
+		primeFinder();
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Euler 5</title>
+	<style type="text/css">
+		#ans{
+			height:80vh;
+			width:80vw;
+			color:cyan;
+			font-size:160pt; 
+		}
+		body{
+			background-color:black;
+		}
+	</style>
+</head>
+<body>
+	<div id='ans'>232792560</div>
+	<script type="text/javascript">
+		function gcd(a,b){
+			if(a%b==0){
+				if(a>b){
+					return b;
+				}else{
+					return a;
+				}
+			}else{
+				for(c=a%b; c!=0; c+=0){
+				c = a%b;
+				a = b;
+				b = c;
+			}
+			return a;
+			}
+		}
+
+		function lcm(){
+			var lcm = 2;
+			for(i=3;i<21;i++){
+				lcm = (lcm*i)/(gcd(lcm,i));
+			}
+			console.log(lcm);
+		}
+
+		lcm();
+
+		// console.log(gcd(60,6));
+	</script>
+</body>
+</html>

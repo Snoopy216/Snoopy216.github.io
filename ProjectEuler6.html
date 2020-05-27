@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project Euler 6</title>
+	<style type="text/css">
+		#ans{
+			height:80vh;
+			width:80vw;
+			color:cyan;
+			font-size:160pt; 
+		}
+		body{
+			background-color:black;
+		}
+	</style>
+</head>
+<body>
+	<div id='ans'>25164150</div>
+	<script type="text/javascript">
+		function squareOfSum(){
+			var total = 0
+			for(i=1;i<101;i++){
+				total += i;
+			}
+			return (total**2);
+		}
+
+		function sumOfSquares(){
+			var sum = 0;
+			for(i=1;i<101;i++){
+				sum += i**2;
+			}
+			return sum;
+		}
+
+		function diff(){
+			var diff = squareOfSum() - sumOfSquares();
+			console.log(diff);
+		}
+
+		diff();
+	</script>
+</body>
+</html>
